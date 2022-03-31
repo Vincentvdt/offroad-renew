@@ -3,7 +3,7 @@ import {Garage} from "./garage.model";
 export interface User {
   id: number;
   email: string;
-  roles: [];
+  roles: [string];
   password: string;
   name: string;
   firstName: string;
@@ -11,5 +11,5 @@ export interface User {
   siret: string;
   createdAt: Date;
   garages: Garage[];
-  token: string;
+  token?: string;
 }
